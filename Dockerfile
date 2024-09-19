@@ -6,10 +6,9 @@ ENV NODE_ENV=production
 WORKDIR /app
 
 COPY package.json ./
-COPY package-lock.json ./
-RUN npm install
+RUN bun install
 COPY . ./
-RUN npm run build
+RUN bun run build
 
 
 FROM node:19-alpine3.16
