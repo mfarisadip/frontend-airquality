@@ -1,7 +1,4 @@
-FROM node:19 as build
-
-ENV NODE_ENV=production 
-
+FROM oven/bun:latest
 
 WORKDIR /app
 
